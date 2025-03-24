@@ -5,7 +5,22 @@
     box-sizing: border-box;
 }
 body{
-    background: #222;
+    background: #f0f8ff;
+    animation: gradientBG 15s ease infinite;
+    background: linear-gradient(-45deg, #f0f8ff, #e6f3ff, #d9ecff, #ccebff);
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .card{
     width: 90%;
